@@ -1,0 +1,224 @@
+body {
+    margin : 0;
+}
+
+.main {
+    position: relative;
+    background : linear-gradient( to bottom, #499add , #4e61c0 );
+    width: 100vw;
+    height: 70vh;
+    min-height: 404px;
+}
+
+.main-content {
+    float: left;
+    color: #eee;
+    padding: 100px;
+}
+
+button {
+    cursor: pointer;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(60, 58, 58);
+    color: #eee;
+    font-size: 16px;
+}
+
+
+.main-image {
+    position: absolute;
+    background-image: url('iphone.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 40vh;
+    min-height: 217px;
+    bottom: 0;
+    right: 0;
+}
+
+.content2-container {
+    position: relative;
+    color: rgb(57, 57, 57);
+    height: 40vh;
+    min-height: 290px;
+}
+
+.content2 {
+    text-align: center;
+    margin: auto;
+    height: 30vh;
+    transform: translate(0, 50%);
+}
+
+.content3-container {
+    height: 50vh;
+    background-color: #4e61c0;
+    color: #eee;
+}
+
+.content3 {
+    text-align: center;
+    margin: auto;
+    padding: 20px 200px;
+}
+
+.offer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.content4-container {
+    text-align: center;
+    margin: auto;
+    height: 800px;
+}
+
+.content4 {
+    width: 100%;
+    height: 100%;
+}
+
+.content4 p {
+    margin: 0;
+    padding: 20px;
+}
+
+.picture-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 0px 50px;
+}
+
+
+.picture-item {
+    min-width: 300px;
+    width: 25vw;
+    height: 30vh;
+    color: #eee;
+    text-align: left;
+    padding: 50px;
+    background-repeat: no-repeat;
+    transition: all 500ms;
+}
+
+.picture-item:hover {
+    transform: scale(0.9);
+}
+
+
+.picture1 {
+    background-image: url('portfolio-1.jpg');
+}
+
+.picture2 {
+    background-image: url('portfolio-2.jpg');
+}
+
+.picture3 {
+    background-image: url('portfolio-3.jpg');
+}
+
+.picture4 {
+    background-image: url('portfolio-4.jpg');
+}
+
+
+.footer {
+    text-align: center;
+    height: 30vh;
+    padding: 50px 200px;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-icon {
+    background-color: #4e61c0;
+    color: #eee;
+}
+
+.footer-icon p{
+    transform: translate(0, 80%);
+}
+
+@media screen and (max-width : 917px) {
+    .content4-container {
+        height : 1300px;
+    }
+}
+
+@media screen and (max-width : 820px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content {
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .main-content::first-line {
+        font-weight: 500;
+        font-size: 28px;
+    }
+
+    .main-image {
+        width: 100%;
+        height: 38vh;
+        background-position: center;
+    }
+
+    .content3-container {
+        width: 100%;
+        height: 720px;
+    }
+    
+    .content3 {
+        padding: 10px 0px;
+    }
+
+    .offer {
+        flex-direction: column;
+        width: 100%;
+
+    }
+    
+    .offer-item {
+        margin: auto
+    }
+    
+    .content4-container {
+        height : 1300px;
+    }
+
+    .footer {
+        height: 400px;
+    }
+
+    .footer-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+        height: 400px;
+
+    }
+}
